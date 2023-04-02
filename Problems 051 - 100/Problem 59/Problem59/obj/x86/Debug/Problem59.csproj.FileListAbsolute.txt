@@ -1,0 +1,23 @@
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\bin\Debug\Problem59.exe
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\bin\Debug\Problem59.pdb
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\Problem59.Form1.resources
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\Problem59.Properties.Resources.resources
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\Problem59.exe
+C:\Users\stc\AppData\Local\Temporary Projects\Problem59\obj\x86\Debug\Problem59.pdb
+E:\Problem 59\Problem59\obj\x86\Debug\Problem59.exe
+E:\Problem 59\Problem59\obj\x86\Debug\Problem59.pdb
+E:\Problem 59\Problem59\bin\Debug\Problem59.exe
+E:\Problem 59\Problem59\bin\Debug\Problem59.pdb
+E:\Problem 59\Problem59\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Problem 59\Problem59\obj\x86\Debug\Problem59.Form1.resources
+E:\Problem 59\Problem59\obj\x86\Debug\Problem59.Properties.Resources.resources
+E:\Problem 59\Problem59\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Problem 59\Problem59\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\Python\Project Euler\Complete\Problem 59\Problem59\obj\x86\Debug\Problem59.exe
+I:\Python\Project Euler\Complete\Problem 59\Problem59\obj\x86\Debug\Problem59.pdb
+C:\Users\stc\Google Drive\Programming\Python\Project Euler\Problems 051 - 100\Problem 59\Problem59\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\stc\Google Drive\Programming\Python\Project Euler\Problems 051 - 100\Problem 59\Problem59\obj\x86\Debug\Problem59.exe
+C:\Users\stc\Google Drive\Programming\Python\Project Euler\Problems 051 - 100\Problem 59\Problem59\obj\x86\Debug\Problem59.pdb

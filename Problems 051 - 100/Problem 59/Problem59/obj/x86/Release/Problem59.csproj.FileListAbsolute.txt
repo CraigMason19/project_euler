@@ -1,0 +1,13 @@
+E:\Problem 59\Problem59\bin\Release\Problem59.exe
+E:\Problem 59\Problem59\bin\Release\Problem59.pdb
+E:\Problem 59\Problem59\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Problem 59\Problem59\obj\x86\Release\Problem59.Form1.resources
+E:\Problem 59\Problem59\obj\x86\Release\Problem59.Properties.Resources.resources
+E:\Problem 59\Problem59\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Problem 59\Problem59\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Problem 59\Problem59\obj\x86\Release\Problem59.exe
+E:\Problem 59\Problem59\obj\x86\Release\Problem59.pdb
+I:\Python\Project Euler\Complete\Problem 59\Problem59\obj\x86\Release\Problem59.exe
+I:\Python\Project Euler\Complete\Problem 59\Problem59\obj\x86\Release\Problem59.pdb
+C:\Users\stc\Google Drive\Programming\Python\Project Euler\Problems 051 - 100\Problem 59\Problem59\obj\x86\Release\Problem59.exe
+C:\Users\stc\Google Drive\Programming\Python\Project Euler\Problems 051 - 100\Problem 59\Problem59\obj\x86\Release\Problem59.pdb
