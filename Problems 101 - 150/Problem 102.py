@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Vector2 import *
+sys.path.append('Helper')
+
+from vector2 import *
 
 # Simple class containing 3 2D-Vectors
 class Triangle:

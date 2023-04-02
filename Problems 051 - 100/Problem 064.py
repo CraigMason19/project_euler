@@ -9,10 +9,10 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
+sys.path.append('Helper')
 
-from ContinuedFractions import ContinuedFraction
 from math import sqrt
+from continued_fractions import ContinuedFraction
 
 def main():
     limit, answer = 10**4, 0
