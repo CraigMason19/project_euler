@@ -1,2 +1,3 @@
 # project_euler
-My solutions to Project Euler questions to learn Python
+
+My solutions to Project Euler questions, when I was trying to learn Python
