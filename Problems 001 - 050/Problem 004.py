@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import IsPalindrome
+sys.path.append('Helper')
+
+from general import IsPalindrome
 
 def main():
     limit = 999

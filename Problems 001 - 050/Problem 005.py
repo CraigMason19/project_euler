@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Primes import PrimeFactors
+sys.path.append('Helper')
+
+from primes import PrimeFactors
 from collections import Counter
 
 def main():

@@ -1,7 +1,9 @@
 from collections import Counter
-from Helper import Product
+
+from general import Product
 
 def IsPrime(n):
+    """ Returns true if n is prime, false otherwise """
     # 2 is the first prime
     if n < 2:
         return False
@@ -41,6 +43,7 @@ def IsLeftRightTruncatablePrime(n):
     return True
 
 def PrimeFactors(n):
+    """ Returns a list of prime factors of n """
     primeFactors = []
     d = 2
 

@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Eratosthenes
+sys.path.append('Helper')
+
+from sieves import Eratosthenes
 
 def main():
     primes = Eratosthenes(10**6)

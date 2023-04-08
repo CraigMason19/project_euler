@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import Product
+sys.path.append('Helper')
+
+from general import Product
 
 BigNumber = '73167176531330624919225119674426574742355349194934'\
             '96983520312774506326239578318016984801869478851843'\

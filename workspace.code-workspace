@@ -6,21 +6,8 @@
 	],
 
 	"settings": {
-		"terminal.integrated.env.windows": 
-		{
-			"PYTHONPATH": ".;./A;./B;"
-		},	
-
-		"python.autoComplete.extraPaths": [
-			".;./A;./B;"
-		],
-
-		"python.linting.pylintArgs": [
-			"--init-hook"
-		],
-
 		"python.analysis.extraPaths": [
-			".;./A;./B;"
+			"./Helper"
 		]
 	},
 }
