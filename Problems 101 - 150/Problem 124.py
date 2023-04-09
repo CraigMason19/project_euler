@@ -9,20 +9,21 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import Product
-from Sieves import Eratosthenes
-from Primes import DistinctPrimeFactors
+sys.path.append('Helper')
+
+from general import product
+from sieves import eratosthenes
+from primes import distinct_prime_factors
 from operator import itemgetter
 
 def Radical(n, primes):
     if n == 1:
         return 1
 
-    return Product(DistinctPrimeFactors(n, primes))
+    return product(distinct_prime_factors(n, primes))
 
 def main():
-    primes = Eratosthenes(10**5)
+    primes = eratosthenes(10**5)
     l = [[i, Radical(i, primes)] for i in range(1, 10**5+1)]
     l.sort(key=itemgetter(1, 0))
     print(l[10**4-1][0])

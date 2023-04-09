@@ -1,8 +1,8 @@
 from collections import Counter
 
-from general import Product
+from general import product
 
-def IsPrime(n):
+def is_prime(n):
     """ Returns true if n is prime, false otherwise """
     # 2 is the first prime
     if n < 2:
@@ -23,26 +23,26 @@ def IsPrime(n):
 
     return True
 
-def IsCircularPrime(n):
+def is_circular_prime(n):
     s = str(n)
     for i in range(0, len(s)):
         s = s[1:]+s[0] # e.g 197 = digit 1 to end plus beginning ( 97+1 = 91)
-        if not IsPrime(int(s)):
+        if not is_prime(int(s)):
             return False
 
     return True
 
-def IsLeftRightTruncatablePrime(n):
+def is_left_right_truncatable_prime(n):
     l = len(str(n))
     for i in range(0, l):
-        if not IsPrime(int(str(n)[i:])):
+        if not is_prime(int(str(n)[i:])):
             return False
-        if not IsPrime(int(str(n)[0:l-i])):
+        if not is_prime(int(str(n)[0:l-i])):
             return False
 
     return True
 
-def PrimeFactors(n):
+def prime_factors(n):
     """ Returns a list of prime factors of n """
     primeFactors = []
     d = 2
@@ -57,7 +57,7 @@ def PrimeFactors(n):
 
 
 # prime list less than sqrt
-def PrimeFactors2(n, primeList):
+def prime_factors2(n, primeList):
     l = []
     for prime in primeList:
         if prime > n:
@@ -79,7 +79,7 @@ def PrimeFactors2(n, primeList):
       # def DistinctPrimeFactorsCount
 
 # TODO
-def DistinctPrimeFactors(n, primeSeq = None):
+def distinct_prime_factors(n, primeSeq = None):
     # Can supply a list of precalculated primes to speed things up
     if primeSeq != None:
         primeFactors = []
@@ -102,20 +102,20 @@ def DistinctPrimeFactors(n, primeSeq = None):
 
         return list(primeFactors)
 
-def DistinctPrimeFactorsSum(n, primeSeq = None):
+def distinct_prime_factors_sum(n, primeSeq = None):
     if primeSeq == None:
-        return sum(DistinctPrimeFactors(n))
+        return sum(distinct_prime_factors(n))
     else:
-        return sum(DistinctPrimeFactors(n, primeSeq))
+        return sum(distinct_prime_factors(n, primeSeq))
 
-def DistinctPrimeFactorsCount(n, primeSeq = None):
+def distinct_prime_factors_count(n, primeSeq = None):
     if primeSeq == None:
-        return len(DistinctPrimeFactors(n))
+        return len(distinct_prime_factors(n))
     else:
-        return len(DistinctPrimeFactors(n, primeSeq))
+        return len(distinct_prime_factors(n, primeSeq))
 
 # returns with tuple
-def DistinctPrimeFactorsWithExponents(n):
+def distinct_prime_factors_with_exponents(n):
     # Primes start at 2 obviously
     dpf = []
     d = 2
@@ -134,9 +134,9 @@ def DistinctPrimeFactorsWithExponents(n):
 # prime factors, add one, and then multiply together
 # e.g. 24 = 2^3 * 3^1
 #      nDivisors(24) = (3+1) * (1+1) = 8
-def NumberOfDivisors(n):
-    dpfwe = DistinctPrimeFactorsWithExponents(n)
-    return Product([exponent[1]+1 for exponent in dpfwe])
+def number_of_divisors(n):
+    dpfwe = distinct_prime_factors_with_exponents(n)
+    return product([exponent[1]+1 for exponent in dpfwe])
     
     
     

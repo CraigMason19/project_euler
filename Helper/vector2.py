@@ -30,12 +30,12 @@ class Vector2:
         if isinstance(other, Vector2):
             return Vector2(self.mX / other.mX, self.mY / other.mY)
         
-    def CalculateLength(self):
+    def calculate_length(self):
         length = math.sqrt(self.mX * self.mX + self.mY * self.mY)
         return math.fabs(length)
 
-    def Normalise(self):
-        l = self.CalculateLength()
+    def normalise(self):
+        l = self.calculate_length()
         try:
             1.0 / l
         except ZeroDivisionError:
@@ -43,9 +43,9 @@ class Vector2:
         self.mX = self.mX / l
         self.mY = self.mY / l
 
-    def Dot(self, other):        
+    def dot(self, other):        
         if isinstance(other, Vector2):
         	return self.mX * other.mX + self.mY * other.mY;
 
-def Dot(v1, v2):        
+def dot(v1, v2):        
     return v1.mX * v2.mX + v1.mY * v2.mY;        

@@ -9,9 +9,10 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Eratosthenes
-from Helper import IsPandigital
+sys.path.append('Helper')
+
+from sieves import eratosthenes
+from general import is_pandigital
 
 # Solved using the divisibility rule for 3 or 9 from wikipedia. The rule states
 #
@@ -35,8 +36,8 @@ from Helper import IsPandigital
 def main():
     answer = 0
 
-    for p in Eratosthenes(10**7):
-        if IsPandigital(p):
+    for p in eratosthenes(10**7):
+        if is_pandigital(p):
             answer = p
 
     print(answer)

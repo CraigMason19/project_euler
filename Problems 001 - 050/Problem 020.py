@@ -9,12 +9,13 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import SumOfDigits
+sys.path.append('Helper')
+
+from general import sum_of_digits
 from math import factorial
 
 def main():
-    print(SumOfDigits(factorial(100)))
+    print(sum_of_digits(factorial(100)))
 
 if __name__ == '__main__':
     main()

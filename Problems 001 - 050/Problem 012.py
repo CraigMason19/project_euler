@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Primes import NumberOfDivisors
+sys.path.append('Helper')
+
+from primes import number_of_divisors
 
 def GetTriangleNumberByTerm(t):
     return (t*(t+1)//2)
@@ -20,7 +21,7 @@ def main():
 
     while True:
         tn = GetTriangleNumberByTerm(term)
-        if NumberOfDivisors(tn) > limit:
+        if number_of_divisors(tn) > limit:
             break
         else:
             term += 1

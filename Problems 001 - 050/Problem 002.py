@@ -11,10 +11,10 @@
 import sys
 sys.path.append('Helper')
 
-from fibonacci import FibonacciGenerator
+from fibonacci import fibonacci_generator
 
 def main():
-    fg = FibonacciGenerator()
+    fg = fibonacci_generator()
 
     # Ignore the first result. the question starts at 1, 1 our fib sequence
     # starts at 0, 1

@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Eratosthenes
+sys.path.append('Helper')
+
+from sieves import eratosthenes
 from math import sqrt
 
 # Repunits
@@ -31,7 +32,7 @@ from math import sqrt
 # (10^k) = 1 (mod 9p)
 #
 
-Primes = Eratosthenes(3000000)
+Primes = eratosthenes(3000000)
 
 # Memory need, possible memory problems. Tested upto k = 10**6
 def RepuintDistinctPrimeFactors(k):

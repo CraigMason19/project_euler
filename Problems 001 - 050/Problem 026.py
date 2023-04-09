@@ -11,8 +11,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Eratosthenes
+sys.path.append('Helper')
+
+from sieves import eratosthenes
 
 # Solved using wikipedia and Fermat's Little theorem
 # From wikipedia...
@@ -46,7 +47,7 @@ def PrimeCycleLength(p):
 def main():
     answer, period = 0, 0
 
-    for prime in Eratosthenes(10**3):
+    for prime in eratosthenes(10**3):
         tmp = PrimeCycleLength(prime)
         if tmp > period:
             answer, period = prime, tmp

@@ -9,11 +9,12 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Fibonacci import FibonacciGenerator
+sys.path.append('Helper')
+
+from fibonacci import fibonacci_generator
 
 def main():
-    fg = FibonacciGenerator()
+    fg = fibonacci_generator()
 
     fib = next(fg)
     count = 1

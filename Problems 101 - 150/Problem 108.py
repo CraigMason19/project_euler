@@ -8,8 +8,6 @@
 # TODO:
 #-------------------------------------------------------------------------------
 
-import sys
-sys.path.append('..\..\Helper')
 from fractions import Fraction
 
 # We can rearrange and solve the equation and solve for 2 variables (x and n)

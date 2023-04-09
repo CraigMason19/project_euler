@@ -11,7 +11,7 @@
 import sys
 sys.path.append('Helper')
 
-from general import Product
+from general import product
 
 BigNumber = '73167176531330624919225119674426574742355349194934'\
             '96983520312774506326239578318016984801869478851843'\
@@ -40,9 +40,9 @@ def main():
 
     for i in range(0, len(BigNumber)-limit-1):
         l = [int(digit) for digit in BigNumber[i:i+limit]]
-        product = Product(l)
-        if product > answer:
-            answer, answerList = product, l
+        prod = product(l)
+        if prod > answer:
+            answer, answerList = prod, l
 
     print(answer)
 

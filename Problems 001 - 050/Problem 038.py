@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import IsPandigital
+sys.path.append('Helper')
+
+from general import is_pandigital
 
 def main():
     # Only numbers less than 10,000 could be pandigital because
@@ -29,7 +30,7 @@ def main():
             else:
                 break
 
-        if IsPandigital(s) :
+        if is_pandigital(s) :
             print(s, i, multipliers)
 
 if __name__ == '__main__':

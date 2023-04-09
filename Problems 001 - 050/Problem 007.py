@@ -11,10 +11,10 @@
 import sys
 sys.path.append('Helper')
 
-from sieves import Eratosthenes
+from sieves import eratosthenes
 
 def main():
-    primes = Eratosthenes(10**6)
+    primes = eratosthenes(10**6)
     print(primes[10001-1])
 
 if __name__ == '__main__':

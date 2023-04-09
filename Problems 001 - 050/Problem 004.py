@@ -11,7 +11,7 @@
 import sys
 sys.path.append('Helper')
 
-from general import IsPalindrome
+from general import is_palindrome
 
 def main():
     limit = 999
@@ -21,7 +21,7 @@ def main():
     for i in range(limit, 100, -1):
         for j in range(limit, 100, -1):
             n = i*j
-            if IsPalindrome(n):
+            if is_palindrome(n):
                palindromes.append(n)
                break
 

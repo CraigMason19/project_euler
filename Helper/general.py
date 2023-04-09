@@ -17,20 +17,20 @@ from math import log10, floor
 # Lists
 # //////////////////////////////////////////////////////////////////////////////
 
-def Product(seq = None):
+def product(seq = None):
     tmp = 1
     for element in seq:
         tmp *= element
     return tmp
 
-def ShiftIndex(index, stride, seq = None):
+def shift_index(index, stride, seq = None):
     size = len(seq)
     index = size + stride
     while(index > size):
         index -= size
     return index
 
-def ShiftSeq(stride, seq = None):
+def shift_seq(stride, seq = None):
     shiftedSeq = []
     for i in range(len(seq)):
         shiftedSeq.append(seq[(i-stride) % len(seq)])
@@ -49,20 +49,20 @@ def ShiftSeq(stride, seq = None):
 # Utility
 # //////////////////////////////////////////////////////////////////////////////
 
-def TimeFunction(func):
+def time_function(func):
     start = datetime.now()
     func()
     end =  datetime.now()
     return end - start
 
-def IsPermutation(x, y):
+def is_permutation(x, y):
     a, b = x, y
     if isinstance(a, int):
         a, b = str(x), str(y)
 
     return ''.join(sorted(a)) == ''.join(sorted(b))
 
-def IsPalindrome(x):
+def is_palindrome(x):
     s = x
     if isinstance(s, int):
         s = str(x)
@@ -71,7 +71,7 @@ def IsPalindrome(x):
 
 # Checks for palindromes in language. For example, "Madam, in Eden I'm Adam" is
 # a palindrome even though it has punctuation.
-def IsLanguagePalindrome(p):
+def is_language_palindrome(p):
     s = p
     # Take out anything that isn't a-z or A-Z
     s = sub('[^a-zA-Z]+', '', s)
@@ -80,17 +80,17 @@ def IsLanguagePalindrome(p):
 
     return s == s[::-1]
 
-def SumOfDigits(n):
+def sum_of_digits(n):
     return sum(int(c) for c in str(n))
 
-def SumInRange(n):
+def sum_in_range(n):
     return int((n + 1) * (n/2))
     #return (n * (n + 1)) // 2
 
-def LengthOfNumber(n):
+def length_of_number(n):
     return int(floor(log10(n)) + 1)
 
-def IsPandigital(x, allowZero = False):
+def is_pandigital(x, allowZero = False):
     compareStr = ''
     numberStr = ''.join(sorted(str(x)))
     length = len(numberStr)

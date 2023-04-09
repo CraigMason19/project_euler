@@ -11,10 +11,10 @@
 import sys
 sys.path.append('Helper')
 
-from sieves import Eratosthenes
+from sieves import eratosthenes
 
 def main():
-    answer = sum(p for p in Eratosthenes(2 * (10**6)))
+    answer = sum(p for p in eratosthenes(2 * (10**6)))
     print(answer)
 
 if __name__ == '__main__':

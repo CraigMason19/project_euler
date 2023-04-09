@@ -8,7 +8,10 @@
 # TODO:
 #-------------------------------------------------------------------------------
 
-from Primes import IsPrime
+import sys
+sys.path.append('Helper')
+
+from primes import is_prime
 
 # Produces primes for n = 0 to 39
 def EulerFormula(n):
@@ -35,7 +38,7 @@ def ConsecutivePrimeCount(f=None, a=None, b=None):
             result = f(n)
 
         # Check for primes
-        if IsPrime(result):
+        if is_prime(result):
             n += 1
         else:
             break

@@ -11,7 +11,7 @@
 import sys
 sys.path.append('Helper')
 
-from primes import PrimeFactors
+from primes import prime_factors
 from collections import Counter
 
 def main():
@@ -25,7 +25,7 @@ def main():
         if i not in d:
             # Counter class counts how many times a prime was used in its prime
             # factorization
-            factorCounter = Counter(PrimeFactors(i))
+            factorCounter = Counter(prime_factors(i))
             for prime in factorCounter:
                 #
                 ussage = factorCounter[prime]

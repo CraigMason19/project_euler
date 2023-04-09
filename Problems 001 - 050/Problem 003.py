@@ -11,10 +11,10 @@
 import sys
 sys.path.append('Helper')
 
-from primes import PrimeFactors
+from primes import prime_factors
 
 def main():
-    pf = PrimeFactors(600851475143)
+    pf = prime_factors(600851475143)
     print(pf[-1])
 
 if __name__ == '__main__':

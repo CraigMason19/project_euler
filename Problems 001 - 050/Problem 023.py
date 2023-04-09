@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import SumInRange
+sys.path.append('Helper')
+
+from general import sum_in_range
 
 def IsAbundant(n):
     return sum(i for i in range(1, (n//2)+1) if n%i == 0) > n
@@ -27,7 +28,7 @@ def main():
             if tmp <= limit:
                 s.add(tmp)
 
-    print(SumInRange(limit) - sum(s))
+    print(sum_in_range(limit) - sum(s))
 
 if __name__ == '__main__':
     main()

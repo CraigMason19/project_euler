@@ -22,6 +22,6 @@ def generalized_pentagonal(term):
         return term
 
     if term%2 == 0:
-        return Pentagonal(-(term // 2))
+        return pentagonal(-(term // 2))
 
-    return Pentagonal((term + 1) // 2)
+    return pentagonal((term + 1) // 2)

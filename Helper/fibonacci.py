@@ -6,26 +6,26 @@ from math import log10
 GoldenRatio = (1 + sqrt(5)) / 2 # 1.6180339887
 SQRT_FIVE = sqrt(5)
 
-def FibonacciGenerator():
+def fibonacci_generator():
     a, b = 0, 1
 
     while True:
         a, b = b, a+b
         yield a
 
-def LengthOfFib(n):
+def length_of_fib(n):
     # e.g. 1000 * LOG(Phi) - (LOG 5)/2 ~= 208.638155
     result = n * log10(GoldenRatio) - (log10(5)/2)
     # Take the whole part of the number and add one
     return int(result)+1
 
-def BinetFormula(n):
+def binet_formula(n):
     PHI = (1 + sqrt(5)) / 2
     phi = (1 - sqrt(5)) / 2
     result = (PHI**n - phi**n) / sqrt(5)
     return int(result)
 
-def FirstDigitsOfFib(n, d):
+def first_digits_of_fib(n, d):
     """
     For the fibonacci number Fib(n), return the first d digits
     """
@@ -33,7 +33,7 @@ def FirstDigitsOfFib(n, d):
     temp = n * 0.20898764024997873 - 0.3494850021680094
     return int( pow( 10, temp - int( temp ) + d - 1 ) )
 
-def IsFib(n):
+def is_fib(n):
     if n == 0 or n == 1:
         return True
 

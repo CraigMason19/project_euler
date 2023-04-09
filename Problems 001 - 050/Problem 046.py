@@ -9,11 +9,12 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Eratosthenes
+sys.path.append('Helper')
+
+from sieves import eratosthenes
 from math import sqrt
 
-Primes = Eratosthenes(10**4)
+Primes = eratosthenes(10**4)
 Squares = [i*i for i in range(1, 10**3)]
 
 def TestConjecture(n):

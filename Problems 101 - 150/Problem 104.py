@@ -12,9 +12,10 @@
 # 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, ...
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import IsPandigital
-from Fibonacci import FirstDigitsOfFib
+sys.path.append('Helper')
+
+from general import is_pandigital
+from fibonacci import first_digits_of_fib
 
 class IntegerRight:
     """ A class represting part of an larger integer on it's right side (last
@@ -64,8 +65,8 @@ def main():
     while True:
         frA, frB = frB, frA + frB
         counter += 1
-        if IsPandigital(frA):
-            if IsPandigital(FirstDigitsOfFib(counter, 9)):
+        if is_pandigital(frA):
+            if is_pandigital(first_digits_of_fib(counter, 9)):
                 print(counter)
                 break
 

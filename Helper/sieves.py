@@ -1,4 +1,4 @@
-def Eratosthenes(limit):
+def eratosthenes(limit):
     primes = [True] * limit
     # 2 is the first prime
     primes[0] = primes[1] = False
@@ -11,7 +11,7 @@ def Eratosthenes(limit):
 
     return [i for i, n in enumerate(primes) if n == True]
 
-def Composite(limit):
+def composite(limit):
     """ A modified Eratosthenes sieve. It does the opposite and returns non primes """
     primes = [True] * limit
     # 2 is the first prime
@@ -62,7 +62,7 @@ def gen_primes():
 
         q += 1
 
-def Phi(n):
+def phi(n):
     """ Returns a list with totients (phi's) in the range [0 -> n-1] """
     tots = list(range(n))
     for i in range(2, n):

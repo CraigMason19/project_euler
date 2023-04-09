@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import SumOfDigits
+sys.path.append('Helper')
+
+from general import sum_of_digits
 
 def main():
     l = []
@@ -19,7 +20,7 @@ def main():
     for b in range(2, 100+1):
         for e in range(2, 20+1):
             result = b**e
-            if SumOfDigits(result) == b:
+            if sum_of_digits(result) == b:
                 l.append(result)
 
     l.sort()

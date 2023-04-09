@@ -9,8 +9,8 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import IsPandigital
+sys.path.append('Helper')
+
 from math import sqrt, floor
 
 def AlphabeticPositionOfChar(c):
