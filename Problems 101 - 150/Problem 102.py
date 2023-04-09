@@ -11,7 +11,7 @@
 import sys
 sys.path.append('Helper')
 
-from vector2 import *
+from vector2 import Vector2, dot
 
 # Simple class containing 3 2D-Vectors
 class Triangle:
@@ -28,10 +28,10 @@ class Triangle:
 
 # Returns true if a point is inside a triangle
 def TriangleContainsPoint(t, p):
-    t.mA.Normalise()
-    t.mB.Normalise()
-    t.mC.Normalise()
-    p.Normalise()
+    t.mA.normalise()
+    t.mB.normalise()
+    t.mC.normalise()
+    p.normalise()
 
     # Compute vectors
     v0 = t.mC - t.mA
@@ -39,11 +39,11 @@ def TriangleContainsPoint(t, p):
     v2 = p - t.mA
 
     # Compute dot products
-    dot00 = Dot(v0, v0)
-    dot01 = Dot(v0, v1)
-    dot02 = Dot(v0, v2)
-    dot11 = Dot(v1, v1)
-    dot12 = Dot(v1, v2)
+    dot00 = dot(v0, v0)
+    dot01 = dot(v0, v1)
+    dot02 = dot(v0, v2)
+    dot11 = dot(v1, v1)
+    dot12 = dot(v1, v2)
 
     # Compute barycentric coordinates
     invDenom = 1 / (dot00 * dot11 - dot01 * dot01)
@@ -58,7 +58,7 @@ def main():
     origin = Vector2(0.0, 0.0)
     answer = 0
 
-    File = open("triangles.txt")
+    File = open("./Problems 101 - 150/triangles.txt")
     for line in File:
         t = Triangle([int(n) for n in line.split(",")])
         if TriangleContainsPoint(t, origin):

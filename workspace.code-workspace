@@ -7,7 +7,7 @@
 
 	"settings": {
 		"python.analysis.extraPaths": [
-			"./Helper"
+			"./Helper;"
 		]
 	},
 }

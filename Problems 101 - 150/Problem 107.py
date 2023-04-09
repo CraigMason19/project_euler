@@ -1,3 +1,13 @@
+#-------------------------------------------------------------------------------
+# Name:        Problem 107.py
+#
+# Notes:
+#
+# Links:
+#
+# TODO:         
+#-------------------------------------------------------------------------------
+
 from operator import *
 from math import *
 
@@ -65,7 +75,7 @@ def Do(x):
         return int(x)
     return x
 
-f = open('network.txt', "r")
+f = open('./Problems 101 - 150/network.txt', "r")
 Matrix3 = []
 for line in f.readlines():
     line = line.replace('\n', '')

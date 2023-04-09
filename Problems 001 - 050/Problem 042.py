@@ -26,7 +26,7 @@ def IsTriangleNumber(n):
 def main():
     answer, words = 0, []
 
-    with open("words.txt") as f:
+    with open("./Problems 001 - 050/words.txt") as f:
         for line in f:
             line = line.replace('"', '')
             words = line.split(",")

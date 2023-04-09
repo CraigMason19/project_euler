@@ -9,7 +9,7 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    with open("p022_names.txt") as f:
+    with open("./Problems 001 - 050/p022_names.txt") as f:
         # Read all the data in the file, replace all quotation marks with
         # nothing and split into a list
         data = f.read().replace('"', '').split(",")
