@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        Problem 59
+# Name:        Problem 059
 #
 # Links:       http://www.asciitable.com/
 #
@@ -30,7 +30,7 @@ def main():
     answer = 0
 
     # Read our ciphered text
-    with open("cipher1.txt", "r") as f:
+    with open("./Problems 051 - 100/cipher1.txt", "r") as f:
         for line in f:
             CipherText = [int(i) for i in line.split(',')]
 

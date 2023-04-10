@@ -10,11 +10,12 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Partitions import NumberOfPartitions
+sys.path.append('Helper')
+
+from partitions import number_of_partitions
 
 def main():
-    p = NumberOfPartitions
+    p = number_of_partitions
     print(p(100) - 1)
 
 if __name__ == '__main__':

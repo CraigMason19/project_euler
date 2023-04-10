@@ -9,11 +9,12 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Partitions import NumberOfPartitionsGenerator
+sys.path.append('Helper')
+
+from partitions import number_of_partitions
 
 def main():
-    p, n = NumberOfPartitionsGenerator(), 0
+    p, n = number_of_partitions(), 0
 
     while True:
         # The first partition returned is p(0)

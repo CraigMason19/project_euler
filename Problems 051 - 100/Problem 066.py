@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from ContinuedFractions import ContinuedFraction
+sys.path.append('Helper')
+
+from continued_fractions import ContinuedFraction
 from math import sqrt
 
 def PellEquationString(n, h, k):

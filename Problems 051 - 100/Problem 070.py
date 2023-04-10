@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Phi
+sys.path.append('Helper')
+
+from sieves import phi
 
 # e.g 87109 is a permutation of 79180
 def IsPermutation(a, b):
@@ -19,7 +20,7 @@ def IsPermutation(a, b):
 def main():
     limit = 10**7
     lowest = (0, 0, limit)
-    totients = Phi(limit)
+    totients = phi(limit)
 
     for n, t in enumerate(totients):
         # 0 Would cause divide by zero errors - n=0 p=0 n/p=0/0

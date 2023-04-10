@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        Problem 79.py
+# Name:        Problem 079.py
 #
 # Notes:       Assumes there are only unique numbers. Also assumes each part of
 #              the password was entered at least once.
@@ -17,7 +17,7 @@ ValidLogins = []
 UsedDigits = None
 
 def main():
-    with open("keylog.txt", "r") as f:
+    with open("./Problems 051 - 100/keylog.txt", "r") as f:
         ValidLogins = f.read().split()
 
     # Find which numbers are in the password. (Has been entered in the file, an

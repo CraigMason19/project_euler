@@ -1,3 +1,13 @@
+#-------------------------------------------------------------------------------
+# Name:        Problem 062
+#
+# Links:       
+#
+# Notes:
+#
+# TODO:
+#-------------------------------------------------------------------------------
+
 from operator import itemgetter
 import collections # For collections.Counter, requires minimum
                    # Python 3.1

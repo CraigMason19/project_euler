@@ -35,7 +35,7 @@ def main():
     biggestNum, lineNumber = LargePower(1, 1), 0
     i = 0
 
-    with open("base_exp.txt") as file:
+    with open("./Problems 051 - 100/base_exp.txt") as file:
         for line in file:
             i += 1
             tmpNum = LargePower.CreateFromList([int(s) for s in line.split(",")])

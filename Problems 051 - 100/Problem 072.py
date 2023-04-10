@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Phi
+sys.path.append('Helper')
+
+from sieves import phi
 
 def main():
 
@@ -29,7 +30,7 @@ def main():
     # print(result)
 
     # OR, it is the equivalent of Sum of Phi(2) -> Phi(1,000,000)
-    print(sum(Phi(10**6+1)[2:]))
+    print(sum(phi(10**6+1)[2:]))
 
 if __name__ == '__main__':
     main()

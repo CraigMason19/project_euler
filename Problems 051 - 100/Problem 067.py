@@ -19,7 +19,7 @@ def LoadTriangleFromFile(name):
 
 def main():
     # Work backwords (from the bottom)
-    triangle = LoadTriangleFromFile("triangle.txt")
+    triangle = LoadTriangleFromFile("./Problems 051 - 100/triangle.txt")
     maxRows = len(triangle)
 
     for r in range(maxRows-1, 1, -1):

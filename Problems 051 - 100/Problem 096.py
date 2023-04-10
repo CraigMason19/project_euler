@@ -9,7 +9,7 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\\..\\Python Experiments')
+sys.path.append('Helper')
 
 import sudoku
 
@@ -17,7 +17,7 @@ def main():
     sudoku_grids, answer = [], 0
 
     # Load all the grids from the text file
-    with open('sudoku.txt', 'r') as f:
+    with open('./Problems 051 - 100/sudoku.txt', 'r') as f:
         while True:
             # Grid number
             line = f.readline()
@@ -29,7 +29,7 @@ def main():
             sudoku_grids.append(grid)
 
     # Loop through all our grids and collate the answer
-    for grid in enumerate(sudoku_grids):
+    for grid in sudoku_grids:
         s = sudoku.Sudoku3x3.from_grid(grid)
         s.solve()
 

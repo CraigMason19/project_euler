@@ -166,7 +166,7 @@ def CompareHands(hand1, hand2):
 def main():
     player1Wins, player2Wins, draws = 0, 0, 0
 
-    with open("poker.txt") as f:
+    with open("./Problems 051 - 100/poker.txt") as f:
         for i, line in enumerate(f):
             hand1 = Hand(line[:14])
             hand2 = Hand(line[15:])

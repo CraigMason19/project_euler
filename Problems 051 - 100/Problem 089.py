@@ -73,7 +73,7 @@ def NumeralToInt(s):
     return total + int(Numerals[s[-1:]])
 
 def main():
-    l = list(line.rstrip('\n') for line in open("roman.txt"))
+    l = list(line.rstrip('\n') for line in open("./Problems 051 - 100/roman.txt"))
     a = sum(len(x) for x in l)
     b = sum(len(MinimalNumeral(NumeralToInt(x))) for x in l)
 

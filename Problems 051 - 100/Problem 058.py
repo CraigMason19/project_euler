@@ -1,7 +1,18 @@
 # This problem is closely related to problem 28.
+#-------------------------------------------------------------------------------
+# Name:        Problem 058
+#
+# Links:
+#
+# Notes:
+#
+# TODO:
+#-------------------------------------------------------------------------------
+
 import sys
-sys.path.append('K:\Programming\Python\Project Euler')
-import Primes
+sys.path.append('Helper')
+
+import primes
 
 PrimeList = [] # Don't technically need one, but it's
                # intresting to see
@@ -14,7 +25,7 @@ SectionStart = 1
 
 while(PrimePercentage > 0.10):
     for i in range(SectionStart+Offset, (Grid*Grid)+1, Offset):
-        if Primes.IsPrime(i): 
+        if primes.is_prime(i): 
             PrimeList.append(i)
         DiagonalNumbersCount += 1
 
@@ -24,8 +35,8 @@ while(PrimePercentage > 0.10):
     Grid += 2
     Offset += 2
 
-print Grid-2
-print PrimePercentage
+print( Grid-2)
+print(PrimePercentage)
 
 
 

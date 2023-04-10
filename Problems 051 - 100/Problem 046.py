@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        Problem 46
+# Name:        Problem 046
 #
 # Links:
 #
@@ -8,12 +8,15 @@
 # TODO:
 #-------------------------------------------------------------------------------
 
-from Sieves import Eratosthenes
+import sys
+sys.path.append('Helper')
+
+from sieves import eratosthenes
 from math import sqrt
 
 # Assume 1 million. Have no idea what the answer is so give ourselves a big
 # margin to search
-Primes = Eratosthenes(10**6)
+Primes = eratosthenes(10**6)
 Squares = [i*i for i in range(1, 10**3)]
 
 def TestConjecture(n):

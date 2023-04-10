@@ -9,8 +9,9 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Helper import SumOfDigits
+sys.path.append('Helper')
+
+from general import sum_of_digits
 from fractions import Fraction
 
 def ContinuedFractionOfEGenerator():
@@ -52,7 +53,7 @@ def NthConvergentOfE(n):
 def main():
     convergent = NthConvergentOfE(100)
     print(convergent)
-    print(SumOfDigits(convergent.numerator))
+    print(sum_of_digits(convergent.numerator))
 
 if __name__ == '__main__':
     main()

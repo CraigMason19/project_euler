@@ -9,13 +9,14 @@
 #-------------------------------------------------------------------------------
 
 import sys
-sys.path.append('..\..\Helper')
-from Sieves import Phi
+sys.path.append('Helper')
+
+from sieves import phi
 
 def main():
     maxPhi, answer = 0, 0
 
-    for i, p in enumerate(Phi(10**6+1)):
+    for i, p in enumerate(phi(10**6+1)):
         # Prevent divide by zero error
         if i == 0:
             continue
