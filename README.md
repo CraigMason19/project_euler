@@ -7,5 +7,4 @@ Problem 064 is my favourite!
 ## Requirements
 Checked with Python 3.11.2
 
-Problem 039 -> numpy
-Problem 075 -> numpy
+Problem 039 & 075 -> numpy 
