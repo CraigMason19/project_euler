@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        Problem 002.py
+# Name:        problem_002.py
 #
 # Notes:
 #
@@ -13,7 +13,7 @@ sys.path.append('Helper')
 
 from fibonacci import fibonacci_generator
 
-def main():
+def main(print_info=False):
     fg = fibonacci_generator()
 
     # Ignore the first result. the question starts at 1, 1 our fib sequence
@@ -30,22 +30,10 @@ def main():
         if f%2 == 0:
             answer += f
 
-    print(answer)
+    if print_info:
+        print(answer)
+
+    return answer
 
 if __name__ == '__main__':
-    main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main(print_info=True)

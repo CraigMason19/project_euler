@@ -1,0 +1,17 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./Helper;",
+        "./Problems 001 - 050",
+        "./Helper",
+        "./Problems 101 - 150"
+    ]
+}

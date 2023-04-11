@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        Problem 102.py
+# Name:        problem_102.py
 #
 # Notes:
 #
@@ -54,7 +54,7 @@ def TriangleContainsPoint(t, p):
     return (u > 0) and (v > 0) and (u + v < 1)
 
 
-def main():
+def main(print_info=False):
     origin = Vector2(0.0, 0.0)
     answer = 0
 
@@ -64,7 +64,10 @@ def main():
         if TriangleContainsPoint(t, origin):
             answer += 1
 
-    print(answer)
+    if print_info:
+        print(answer)
 
+    return answer
+    
 if __name__ == '__main__':
-    main()
+    main(print_info=True)
