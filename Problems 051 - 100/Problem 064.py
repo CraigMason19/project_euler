@@ -13,7 +13,7 @@ sys.path.append('Helper')
 
 from math import sqrt
 
-from Helper.continued_fractions import ContinuedFraction
+from continued_fractions import ContinuedFraction
 
 def main():
     limit, answer = 10**4, 0
